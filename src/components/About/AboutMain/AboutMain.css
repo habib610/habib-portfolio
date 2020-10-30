@@ -1,0 +1,34 @@
+ .about{
+ background-color: #201e43;
+ color: white;
+ position: relative;
+ padding-top: 100px;
+ }
+ /* .about img{
+     border: 20px solid #201e43;
+     position: absolute;
+     top: 0;
+     content: '';
+     transform: translateY(-100px);
+ } */
+ ul > li {
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+}
+ul{
+    padding-inline-start: 20px;
+    
+}
+
+.about ul li strong{
+    min-width: 120px;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+.about ul li strong::before{
+    position: relative;
+    left: 100px;
+    content: ":";
+}

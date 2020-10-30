@@ -1,0 +1,16 @@
+/* h6{
+  background: linear-gradient(145deg,#f81f01,#ee076e);
+  color: #f9004d; #201e43, #0a115c
+} */
+a{
+  text-decoration: none;
+}
+.common-btn{
+  background: linear-gradient(145deg,#f81f01, #ee076e);
+  transition: all ease 1s;
+  color: white;
+}
+.common-btn:hover{
+  background: linear-gradient(145deg,#ee076e, #f81f01);
+  color: white;
+}

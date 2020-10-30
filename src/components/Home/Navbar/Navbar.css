@@ -1,0 +1,17 @@
+.nav-list-normal{
+    color: #f81f01;
+    font-weight: 600;
+    margin: 0 0.51vw;
+    padding: 7px 25px;
+    border-radius: 3px;
+}
+.nav-list-active{
+    color: white;
+    background: linear-gradient(145deg,#f81f01,#ee076e);
+   
+}
+
+.nav-list-normal:hover{
+    color: white;
+    background: linear-gradient(145deg,#f81f01,#ee076e);
+}
