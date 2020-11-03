@@ -1,12 +1,105 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { Subject } from '@material-ui/icons';
+import { Button, Grid, input, makeStyles, TextField, Typography } from '@material-ui/core';
+
+const useStyles = makeStyles({
+    root: {
+        margin: '100px 0px',
+        '& .MuiGrid-item': {
+            marginBottom: '20px',
+
+        }
+    }
+})
 
 const EmailForm = () => {
+    const [user, setUser] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    })
+
+    const handleBlur = (e) => {
+        let isFieldValid = true;
+        if (e.target.name === "email") {
+            isFieldValid = /\S+@\S+\.\S+/.test(e.target.value);
+        }
+
+        if (e.target.name === "subject") {
+            const subjectValid = e.target.value !== '';
+            isFieldValid = subjectValid;
+        }
+        if (e.target.name === "message") {
+            const messageValid = e.target.value !== '';
+            isFieldValid = messageValid;
+        }
+
+        if (isFieldValid) {
+            const newUserInfo = { ...user };
+            newUserInfo[e.target.name] = e.target.value;
+            setUser(newUserInfo);
+        }
+    }
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+
+        if (user.email && user.message && user.subject && user.message) {
+            emailjs.sendForm('gmail', 'template_2ibbd3w', e.target, 'user_dp8MAQTcmc9ZbBJzfqUpr')
+                .then((result) => {
+                    if (result) {
+                        alert("Email sent successfully")
+                    }
+                }, (error) => {
+                    console.log(error.text);
+                });
+            console.log("Working")
+            e.target.reset()
+        }
+        else {
+            alert("Please complete all the field with valid information")
+        }
+
+
+    }
+
+
+
     return (
-        <div>
-            <form action="">
-                <h1>Email Form Coming Soon</h1>
-            </form>
-        </div>
+
+        <Grid container justify="center">
+            <div className="container">
+                <Typography style={{ textAlign: 'center', marginBottom: '20px', color: '#ee076e' }} variant="h4">
+                    Get In Touch
+                    </Typography>
+
+                <form onSubmit={sendEmail}  >
+                    <div className=" form-group mx-auto">
+                        <input fullWidth className="form-control" required onBlur={handleBlur} type="text" placeholder="Name" name="name" />
+                    </div>
+
+                    <div className=" form-group mx-auto">
+                        <input required className="form-control" type="email" onBlur={handleBlur} placeholder="Email Address" name="email" />
+                    </div>
+
+                    <div className=" form-group mx-auto">
+                        <input required className="form-control" type="text" onBlur={handleBlur} placeholder="Subject" name="subject" />
+                    </div>
+
+                    <div className=" form-group mx-auto">
+                        <textarea required className="form-control" multiline onBlur={handleBlur} id="" rows="5" placeholder="Your message" name="message"  ></textarea>
+                    </div>
+
+                    <button className="btn common-btn" variant="contained" type="submit">Send Message </button>
+                </form>
+            </div>
+        </Grid>
+
+
+
     );
 };
 

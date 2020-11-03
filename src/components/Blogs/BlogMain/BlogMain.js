@@ -1,4 +1,4 @@
-import { Container, Grid } from '@material-ui/core';
+import { Container, Grid, Box } from '@material-ui/core';
 import React from 'react';
 import BlogCard from './BlogCard/BlogCard';
 
@@ -29,6 +29,9 @@ const BlogMain = () => {
 
     return (
         <Container style={{marginTop: '50px'}}>
+            <Box textAlign="center">
+                <h1 className="custom-title">Blogs</h1>
+                </Box>
             <Grid container justify="center" spacing={3}>
                 {
                     articles.map(article => <BlogCard article={article} key={article.id}>  </BlogCard>)

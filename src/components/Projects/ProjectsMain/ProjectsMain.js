@@ -1,6 +1,6 @@
-import { Container, Divider, Grid } from '@material-ui/core';
+import { Container, Grid, Box } from '@material-ui/core';
 import React from 'react';
-import Navbar from '../../Home/Navbar/Navbar';
+import NavbarMain from '../../Home/Navbar/NavbarMain';
 import ProjectCard from '../ProjectCard/ProjectCard';
 const projecdata=[
     {
@@ -63,8 +63,11 @@ const projecdata=[
 const ProjectsMain = () => {
     return (
         <div>
-            <Navbar></Navbar>
+             <NavbarMain></NavbarMain>
             <Container style={{marginTop: '100px'}}>
+                <Box textAlign="center">
+                <h1 className="custom-title">Projects</h1>
+                </Box>
             <Grid container spacing={3} justify="center" >
                 {
                     projecdata.map( details=><ProjectCard details={details} key={details.id}></ProjectCard>)

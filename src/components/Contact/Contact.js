@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Home/Navbar/Navbar';
 import ContactMain from './ContactMain/ContactMain';
 
 const Contact = () => {

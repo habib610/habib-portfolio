@@ -12,16 +12,28 @@ import { Grid } from '@material-ui/core';
 const useStyles = makeStyles({
     root: {
       width: 345,
+        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .9)',
+        transition: 'all linear .4s',
+        '&:hover':{
+          transform: 'scale(1.1)'
+        },
       '& .MuiButton-textSizeSmall':{
         borderWidth: "3px",
         borderStyle: "solid",
       borderImage: " linear-gradient(to bottom, #f81f01, #ee076e) 1  100%;",
       transition: 'all linear .7s'
-    }
+    },
+    
     },
     media: {
       height: 140,
     },
+    cardContent:{
+      '&:hover':{
+        background:"linear-gradient(45deg, #f81f01 30%, #ee076e 90%) ;",
+        color: 'white'
+      },
+    }
   });
 const BlogCard = ({article}) => {
     const classes = useStyles();
@@ -35,7 +47,7 @@ const BlogCard = ({article}) => {
   image={img}
   title={name}
 />
-<CardContent>
+<CardContent className={classes.cardContent}>
   <Typography gutterBottom variant="h5" component="h2">
   {name}
   </Typography>

@@ -1,7 +1,7 @@
 import { Button, Container, Grid, makeStyles, Table, Typography } from '@material-ui/core';
 import React from 'react';
 import './AboutMain.css'
-
+import logo from '../../../logo.svg'
 const useStyles = makeStyles({
     root:{
         marginTop: '40px',
@@ -35,7 +35,7 @@ const AboutMain = () => {
         <Grid item md={1}>
         </Grid>
             <Grid item md={5} >
-            <Typography variant="h3"  component="h5" className="myName">
+            <Typography variant="h3"   component="h5" className="myName ">
             About Me
             </Typography>
 
@@ -52,7 +52,7 @@ const AboutMain = () => {
                 <li><strong>E-mail</strong>habib54562@gmail.com</li>
                 <li><strong>Phone</strong>+8801955190797</li>
             </ul>
-            <Button  variant="contained" download color="secondary" className="common-btn"  href="https://drive.google.com/drive/u/1/folders/1XvKqNUL_m5xeqYju3JynEk8NleudWnXH">Download Resume</Button>
+            <Button  variant="contained" download color="secondary" className="common-btn"  href="https://drive.google.com/file/d/1ziPyEjTbCi9RuQfuS21NbsqFCr3-SgON/view?usp=sharing">Download Resume</Button>
             </Grid>
 
             

@@ -4,6 +4,7 @@ import ProjectsMain from './ProjectsMain/ProjectsMain';
 const Projects = () => {
     return (
         <div>
+        
            <ProjectsMain></ProjectsMain>
         </div>
     );

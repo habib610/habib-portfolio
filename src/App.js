@@ -12,6 +12,7 @@ import Blogs from './components/Blogs/Blogs';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

@@ -2,15 +2,43 @@
   background: linear-gradient(145deg,#f81f01,#ee076e);
   color: #f9004d; #201e43, #0a115c
 } */
-a{
-  text-decoration: none;
+a,a:hover{
+  text-decoration: none !important;
+  color: white;
 }
+
+
 .common-btn{
   background: linear-gradient(145deg,#f81f01, #ee076e);
   transition: all ease 1s;
-  color: white;
+  color: white !important;
 }
 .common-btn:hover{
   background: linear-gradient(145deg,#ee076e, #f81f01);
-  color: white;
+  color: white !important;
+}
+.footer-link{
+  color: #fff;
+}
+.custom-title{
+  color: #ee076e;
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+.custom-title::after{
+  content: '';
+  width: 80px;
+  height: 3px;
+  position: absolute;
+  display: block;
+  bottom: -25%;
+  right: 45%;
+  background: linear-gradient(145deg,#ee076e, #f81f01);
+  transform: translate(-45%, -25%);
+}
+.footer-icon{
+  color: white !important;
 }

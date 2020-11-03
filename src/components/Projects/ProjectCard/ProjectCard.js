@@ -14,6 +14,11 @@ const useStyles = makeStyles({
     maxWidth: 350,
     height: 500,
     margin: ' 30px 0px',
+    transition: 'all linear .4s',
+    '&:hover':{
+      boxShadow: '0 3px 10px 5px rgba(255, 105, 135, .9)',
+      transform: 'scale(1.02)',
+    },
     '& .MuiButton-textSizeSmall':{
         borderWidth: "3px",
         borderStyle: "solid",

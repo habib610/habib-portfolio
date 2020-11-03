@@ -3,12 +3,14 @@ import React from 'react';
 
 const useStyles = makeStyles({
     root:{
+        paddingTop: '30px',
+        fontFamily: 'Poppins',
         '& .MuiTypography-h2':{
-        color: '#ee076e',
-        fontWeight: '800'
+        fontWeight: '700'
         },
-        myName:{
-            fontWeight: '800'
+        '& .MuiTypography-h4':{
+            fontWeight: '600',
+            marginBottom: '20px'
         }
     }
 });
@@ -18,7 +20,7 @@ const HeaderMain = () => {
     return (
         <Container className={classes.root}>
             
-            <Grid container alignItems="center" spacing={2} justify="center">
+            <Grid  container alignItems="center" spacing={2} justify="center">
             <Grid item md={1}>
             </Grid>
                 <Grid item md={6} >
@@ -35,12 +37,10 @@ const HeaderMain = () => {
                 I love to create Awesome website with more cleaner code. I'm a  specialized in frontend for complex scalable web apps. I always provide error free, flat and creative design as user requirements.  Want to know how I may help your project?
                 </Typography>
                 </Grid>
-
                 <Grid item md={5}>
                 <img className="home-side-image" src="https://iili.io/3e7x3b.md.png" alt=""/>
             </Grid>
             </Grid>
-            
         </Container>
     );
 };

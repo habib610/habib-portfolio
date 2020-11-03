@@ -1,11 +1,11 @@
 import React from 'react';
-import Navbar from '../Home/Navbar/Navbar';
+import NavbarMain from '../Home/Navbar/NavbarMain';
 import AboutMain from './AboutMain/AboutMain';
 
 const About = () => {
     return (
         <div>
-            <Navbar></Navbar>
+              <NavbarMain></NavbarMain>
             <AboutMain></AboutMain>
         </div>
     );
