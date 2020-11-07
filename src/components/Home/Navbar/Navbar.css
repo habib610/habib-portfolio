@@ -1,19 +1,19 @@
 .nav-list-normal{
-    color: #f81f01;
-    font-weight: 600;
+    color:#fe3e57;
+    font-weight: 700;
     margin-right: 10px;
     padding: 7px 25px;
     border-radius: 3px;
 }
 .nav-list-active{
     color: white;
-    background: linear-gradient(145deg,#f81f01,#ee076e);
-   
+    background: linear-gradient(145deg,#ff3b21,#ee076e);
+   font-weight: 700;
 }
 
 .nav-list-normal:hover{
     color: white;
-    background: linear-gradient(145deg,#f81f01,#ee076e);
+    background: linear-gradient(145deg,#ff3b21,#ee076e);
 }
 button:focus{
     outline: none !important;

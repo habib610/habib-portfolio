@@ -14,11 +14,15 @@
     "bootstrap": "^4.5.3",
     "emailjs-com": "^2.6.3",
     "firebase": "^8.0.0",
+    "framer-motion": "^2.9.4",
+    "particles-bg": "^2.5.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.10.0",
+    "react-particles-js": "^3.4.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "vanta": "^0.5.21"
   },
   "scripts": {
     "start": "react-scripts start",

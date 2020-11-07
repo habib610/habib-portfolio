@@ -49,11 +49,6 @@ const NavDrawer = () => {
           <ListItem>
           <NavLink style={{width: '100%'}} to="/projects" className="nav-list-normal"  activeClassName="nav-list-active">Projects</NavLink>
           </ListItem>
-
-          <ListItem>
-          <NavLink style={{width: '100%'}} to="/blogs" className="nav-list-normal"  activeClassName="nav-list-active">Blogs</NavLink>
-          </ListItem>
-
           <ListItem>
           <NavLink style={{width: '100%'}} to="/blogs" className="nav-list-normal"  activeClassName="nav-list-active">Blogs</NavLink>
           </ListItem>
@@ -67,8 +62,8 @@ const NavDrawer = () => {
         <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)} color="inherit">  <MenuIcon/></Button>
-          <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
+          <Button onClick={toggleDrawer(anchor, true)} style={{color: "#ee076e"}}>  <MenuIcon/></Button>
+          <Drawer  anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>
         </React.Fragment>

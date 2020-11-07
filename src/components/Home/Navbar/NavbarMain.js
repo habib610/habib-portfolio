@@ -44,11 +44,9 @@ const NavbarMain = () => {
                 <Button  variant="contained" download color="secondary" className="common-btn"  href="https://drive.google.com/file/d/1ziPyEjTbCi9RuQfuS21NbsqFCr3-SgON/view?usp=sharing">Download Resume</Button>
           <Button size="small" ></Button>
                 </div>
-               
+
                 <div className={classes.sectionMobile}>
-              
                 <NavDrawer></NavDrawer>
-    
                 </div>
                    
                 </Toolbar>

@@ -1,17 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import { Subject } from '@material-ui/icons';
-import { Button, Grid, input, makeStyles, TextField, Typography } from '@material-ui/core';
+import {  Grid, input,  Typography } from '@material-ui/core';
 
-const useStyles = makeStyles({
-    root: {
-        margin: '100px 0px',
-        '& .MuiGrid-item': {
-            marginBottom: '20px',
-
-        }
-    }
-})
 
 const EmailForm = () => {
     const [user, setUser] = useState({

@@ -4,11 +4,10 @@ import BlogMain from './BlogMain/BlogMain';
 
 const Blogs = () => {
     return (
-        <div>
+        <div style={{background:'#080726', color: 'white'}}>
           <NavbarMain></NavbarMain>
         <BlogMain></BlogMain>
         </div>
-            // https://iili.io/3evgnt.md.jpg
     );
 };
 

@@ -1,12 +1,11 @@
 import React from 'react';
-import Footer from '../Footer/Footer';
-import Header from './Header/Header';
+
+import MyComponent from '../MyComponent/MyComponent';
 
 const Home = () => {
     return (
         <div>
-            <Header></Header>
-            <Footer/>
+            <MyComponent></MyComponent>
         </div>
     );
 };

@@ -1,15 +1,17 @@
-import { Button, Container, Grid, makeStyles, Table, Typography } from '@material-ui/core';
+import { Button, Container, Grid, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
 import './AboutMain.css'
-import logo from '../../../logo.svg'
+import { motion } from "framer-motion"
+
+
 const useStyles = makeStyles({
     root:{
         marginTop: '40px',
+        paddingBottom: '50px',
         '& .MuiTypography-h3':{
-        color: '#ee076e',
-        fontWeight: '800',
+        fontWeight: '700',
         marginBottom: '20px',
-       
+        fontFamily: 'Poppins',
         },
         '& .MuiTypography-root':{
             marginBottom: '20px'
@@ -26,17 +28,16 @@ const AboutMain = () => {
     return (
         <section className="about">
         <Container className={classes.root}>
-            
-        <Grid container alignItems="center" spacing={2} justify="center">
+        <Grid container alignItems="center" spacing={3} justify="center">
     
-        <Grid item md={5}>
+        <Grid item sm={12} md={5}>
             <img className="home-side-image" src="https://iili.io/3e0ian.md.jpg" alt=""/>
         </Grid>
-        <Grid item md={1}>
+        <Grid item sm={0} md={1}>
         </Grid>
-            <Grid item md={5} >
-            <Typography variant="h3"   component="h5" className="myName ">
-            About Me
+            <Grid item sm={12} md={5} >
+            <Typography variant="h3"   component="h5" >
+             <motion.div animate={{color: "#fe3e57", fontSize: '60px'}}>About Me</motion.div>
             </Typography>
 
             <Typography variant="body1"  component="p">

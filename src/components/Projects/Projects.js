@@ -3,8 +3,7 @@ import ProjectsMain from './ProjectsMain/ProjectsMain';
 
 const Projects = () => {
     return (
-        <div>
-        
+        <div style={{background: '#080726'}}>
            <ProjectsMain></ProjectsMain>
         </div>
     );

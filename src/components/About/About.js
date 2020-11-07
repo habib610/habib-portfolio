@@ -4,7 +4,7 @@ import AboutMain from './AboutMain/AboutMain';
 
 const About = () => {
     return (
-        <div>
+        <div style={{background: "#201e43"}}>
               <NavbarMain></NavbarMain>
             <AboutMain></AboutMain>
         </div>

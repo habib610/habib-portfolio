@@ -1,16 +1,23 @@
 import { Container, Grid, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
-
+import { motion } from "framer-motion"
 const useStyles = makeStyles({
     root:{
-        paddingTop: '30px',
+        paddingTop: '50px',
         fontFamily: 'Poppins',
         '& .MuiTypography-h2':{
-        fontWeight: '700'
+        fontWeight: '700',
+        fontSize: '30px',
+        color: 'white'
         },
         '& .MuiTypography-h4':{
-            fontWeight: '600',
-            marginBottom: '20px'
+            fontWeight: '700',
+            fontFamily: 'Poppins',
+            marginBottom: '20px',
+            color:"#fe3e57" 
+        },
+        '& .MuiTypography-body2':{
+            color: "white"
         }
     }
 });
@@ -18,22 +25,26 @@ const useStyles = makeStyles({
 const HeaderMain = () => {
     const classes = useStyles();
     return (
-        <Container className={classes.root}>
-            
+         
+        <div className={classes.root} >
+ <Container style={{position: 'relative'}}>
             <Grid  container alignItems="center" spacing={2} justify="center">
             <Grid item md={1}>
             </Grid>
                 <Grid item md={6} >
-                <Typography variant="body2" color="secondary" component="p">
+                <Typography variant="body2" component="p">
                 WELCOME TO MY WORLD
                 </Typography>
-                <Typography variant="h2"  component="h5" className={classes.myself}>
-                Hello, I'm <span className="myName">Habib</span>
+                <Typography animate={{scale: 2}} variant="h2"  component="h5" className={classes.myself}>
+                <motion.div animate={{fontSize: "60px"}}>
+                Hello, I'm <motion.span animate={{color: "#fe3e57"}} className="myName">Habib</motion.span>
+                </motion.div>
                 </Typography>
+                
                 <Typography variant="h4" color="secondary" component="h6">
                 Front-End Developer
                 </Typography>
-                <Typography variant="body1" color="secondary" component="p">
+                <Typography variant="body1" color="secondary" style={{color: "white"}} component="p">
                 I love to create Awesome website with more cleaner code. I'm a  specialized in frontend for complex scalable web apps. I always provide error free, flat and creative design as user requirements.  Want to know how I may help your project?
                 </Typography>
                 </Grid>
@@ -42,6 +53,8 @@ const HeaderMain = () => {
             </Grid>
             </Grid>
         </Container>
+        </div>
+       
     );
 };
 

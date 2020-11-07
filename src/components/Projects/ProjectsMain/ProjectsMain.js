@@ -1,8 +1,9 @@
 import { Container, Grid, Box } from '@material-ui/core';
 import React from 'react';
+import { motion } from "framer-motion"
 import NavbarMain from '../../Home/Navbar/NavbarMain';
 import ProjectCard from '../ProjectCard/ProjectCard';
-const projecdata=[
+const projectData=[
     {
         id: 1,
         img: 'https://iili.io/3eeuHl.md.jpg',
@@ -66,11 +67,15 @@ const ProjectsMain = () => {
              <NavbarMain></NavbarMain>
             <Container style={{marginTop: '100px'}}>
                 <Box textAlign="center">
-                <h1 className="custom-title">Projects</h1>
+                <motion.h1 
+                initial={{opacity: 0,}}
+                animate={{scale: 1.1, opacity: 1,   color: "#fe3e57"}}
+                transition={{delay: .7}}
+                className="custom-title">Projects</motion.h1>
                 </Box>
             <Grid container spacing={3} justify="center" >
                 {
-                    projecdata.map( details=><ProjectCard details={details} key={details.id}></ProjectCard>)
+                    projectData.map( details=><ProjectCard details={details} key={details.id}></ProjectCard>)
                 }
             </Grid>
             </Container>

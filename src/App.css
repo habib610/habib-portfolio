@@ -1,7 +1,14 @@
-/* h6{
+ .my_class{
   background: linear-gradient(145deg,#f81f01,#ee076e);
-  color: #f9004d; #201e43, #0a115c
-} */
+  color: #f9004d; 
+  color: #fd3172; 
+  color: #201e43;
+  color: #0a115c #201e43;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+
 a,a:hover{
   text-decoration: none !important;
   color: white;
@@ -9,19 +16,18 @@ a,a:hover{
 
 
 .common-btn{
-  background: linear-gradient(145deg,#f81f01, #ee076e);
+  background: linear-gradient(145deg,#ff3b21,#ee076e);
   transition: all ease 1s;
   color: white !important;
 }
 .common-btn:hover{
-  background: linear-gradient(145deg,#ee076e, #f81f01);
+  background: linear-gradient(45deg,#ee076e, #ff3b21);
   color: white !important;
 }
 .footer-link{
   color: #fff;
 }
 .custom-title{
-  color: #ee076e;
   font-size: 50px;
   font-weight: 700;
   position: relative;
