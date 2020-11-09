@@ -35,19 +35,19 @@ const Footer = () => {
                         <Typography variant="h6">
                             About Me
                     </Typography>
-                        <Typography variant="p">
+                        <Typography >
                             I build up awesome web front-end. Building  quality website is my specialty. I will make more interactive website for your business.
                     </Typography>
                         <Typography variant="h6" style={{ marginTop: '30px' }}>
                             Contact Me
                     </Typography>
                         <Box>
-                            <Typography variant="p">
+                            <Typography >
                                 <EmailOutlined style={{ marginRight: '10px' }} /> habib54562@gmail.com
                     </Typography>
                         </Box>
                         <Box>
-                            <Typography variant="p">
+                            <Typography>
                                 <PhoneInTalk style={{ marginRight: '10px' }} /> +8801955190797
                     </Typography>
                         </Box>
@@ -71,12 +71,12 @@ const Footer = () => {
 <Grid item container md={12}>
 <Grid  style={{ color: 'white', display: 'flex', textAlign: 'center' }} item md={8}>
 
-<Link className="footer-icon" href="https://github.com/habib610" target="_blank"><GitHub /></Link>
-<Link target="_blank" className="footer-icon" href="https://www.linkedin.com/in/habib610/">< LinkedIn /></Link>
-<Link target="_blank" className="footer-icon" href="https://twitter.com/MdHabib17720334">  < Twitter /></Link>
+<a className="footer-icon" href="https://github.com/habib610" ><GitHub /></a>
+<a  className="footer-icon" href="https://www.linkedin.com/in/habib610/">< LinkedIn /></a>
+<a  className="footer-icon" href="https://twitter.com/MdHabib17720334">  < Twitter /></a>
 </Grid>
 <Grid item md={4}>
-<Typography variant="p">
+<Typography >
     {new Date().getFullYear()} &copy; Habibur Rahman. All Right reserved
 </Typography>
 </Grid>

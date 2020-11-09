@@ -4,7 +4,7 @@ import './AboutMain.css'
 import { motion } from "framer-motion"
 
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme=>({
     root:{
         marginTop: '40px',
         paddingBottom: '50px',
@@ -20,22 +20,27 @@ const useStyles = makeStyles({
             color: '',
             fontWeight: '800'
         }
+    },
+    hero:{
+        width: 300,
+        overflowX: 'hidden',
+        [theme.breakpoints.up("sm")]:{
+            width: 455,
+        }
     }
-});
+}));
 
 const AboutMain = () => {
     const classes = useStyles();
     return (
         <section className="about">
         <Container className={classes.root}>
-        <Grid container alignItems="center" spacing={3} justify="center">
-    
-        <Grid item sm={12} md={5}>
-            <img className="home-side-image" src="https://iili.io/3e0ian.md.jpg" alt=""/>
+        <Grid container alignItems="center" justify="center" spacing={3} >
+    <Grid item md={1}></Grid>
+        <Grid item  md={5}>
+            <img className={classes.hero}  src="https://iili.io/3e0ian.md.jpg" alt=""/>
         </Grid>
-        <Grid item sm={0} md={1}>
-        </Grid>
-            <Grid item sm={12} md={5} >
+            <Grid item  md={5} >
             <Typography variant="h3"   component="h5" >
              <motion.div animate={{color: "#fe3e57", fontSize: '60px'}}>About Me</motion.div>
             </Typography>
@@ -55,8 +60,6 @@ const AboutMain = () => {
             </ul>
             <Button  variant="contained" download color="secondary" className="common-btn"  href="https://drive.google.com/file/d/1ziPyEjTbCi9RuQfuS21NbsqFCr3-SgON/view?usp=sharing">Download Resume</Button>
             </Grid>
-
-            
         </Grid>
         
     </Container>

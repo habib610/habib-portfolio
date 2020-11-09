@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 const useStyles = makeStyles({
   root: {
-    width: 345,
+    width: 300,
     marginTop: "40px",
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .9)',
     transition: 'all linear 1s',
@@ -64,6 +64,7 @@ const BlogCard = ({ article }) => {
               className={classes.media}
               image={img}
               title={name}
+              
             />
             <CardContent className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">

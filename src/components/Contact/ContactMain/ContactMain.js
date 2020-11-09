@@ -25,18 +25,18 @@ const ContactMain = () => {
                 animate={{opacity: 1}}
                 transition={{duration: .5, delay: .5}}
                  className="line" ></motion.div>
-                <Typography variant="p">
+                <Typography>
                 I like to create interactive website with fun, Open minded people. Feel free to contact with me
               </Typography>
                 </Grid>
 
-                <Grid item md={12} >
-                    <Typography variant="h5" style={{textAlign: 'center'}}>
+                <Grid item xs={12} sm={12} md={12} >
+                    <div style={{textAlign: 'center'}}>
                         I'd <motion.span 
                         initial={{color: "black"}}
                         animate={{color: "#f9004d", fontWeight: "800"}}
                         ><FavoriteBorderIcon/></motion.span>  to help you
-                    </Typography>
+                    </div>
                 </Grid>
                 <Grid item container justify="center" md={12} style={{background: 'black', marginTop: '60px'}}>
                 <Grid  item md={4} >

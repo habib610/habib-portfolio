@@ -3,6 +3,7 @@
  color: white;
  position: relative;
  padding-top: 100px;
+ overflow-x: hidden !important;
  }
  /* .about img{
      border: 20px solid #201e43;
