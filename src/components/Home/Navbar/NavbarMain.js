@@ -41,7 +41,7 @@ const NavbarMain = () => {
           <NavLink to="/contact" className="nav-list-normal"  activeClassName="nav-list-active">Contact</NavLink>
                 </div>
                 <div className={classes.sectionDesktop}>
-                <Button  variant="contained" download color="secondary" className="common-btn"  href="https://drive.google.com/file/d/1ziPyEjTbCi9RuQfuS21NbsqFCr3-SgON/view?usp=sharing">Download Resume</Button>
+                <Button  variant="contained" download color="secondary" className="common-btn"  href="https://drive.google.com/file/d/1QcFUzBLAiHYA67Gf-O0yYoz6ypnrW-ki/view?usp=sharing">Download Resume</Button>
           <Button size="small" ></Button>
                 </div>
 

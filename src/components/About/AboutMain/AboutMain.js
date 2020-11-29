@@ -58,7 +58,7 @@ const AboutMain = () => {
                 <li><strong>E-mail</strong>habib54562@gmail.com</li>
                 <li><strong>Phone</strong>+8801955190797</li>
             </ul>
-            <Button  variant="contained" download color="secondary" className="common-btn"  href="https://drive.google.com/file/d/1ziPyEjTbCi9RuQfuS21NbsqFCr3-SgON/view?usp=sharing">Download Resume</Button>
+            <Button  variant="contained" download color="secondary" className="common-btn"  href="https://drive.google.com/file/d/1QcFUzBLAiHYA67Gf-O0yYoz6ypnrW-ki/view?usp=sharing">Download Resume</Button>
             </Grid>
         </Grid>
         
