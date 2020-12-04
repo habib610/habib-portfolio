@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     '& .MuiButton-textSizeSmall': {
       borderWidth: "3px",
       borderStyle: "solid",
-      borderImage: " linear-gradient(to bottom, #f81f01, #ee076e) 1  100%;",
+      borderImage: " linear-gradient(to bottom, #07c020 50%,#dfdf26) 1  100%;",
       transition: 'all linear .7s'
     },
 
@@ -40,12 +40,7 @@ const useStyles = makeStyles({
     }
     
   },
-  cardContent: {
-    '&:hover': {
-      // background: "linear-gradient(45deg, #f81f01 30%, #ee076e 90%) ;",
-      // color: 'white'
-    },
-  }
+
 });
 const BlogCard = ({ article }) => {
   const classes = useStyles();
@@ -74,7 +69,7 @@ const BlogCard = ({ article }) => {
           </CardActionArea>
           <CardActions>
 
-            <Button size="small" className="custom-link-btn" target="_blank" href={link}>
+            <Button size="small"  className="custom-link-btn" target="_blank" href={link}>
               Read Article
 </Button>
           </CardActions>

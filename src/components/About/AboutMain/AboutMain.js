@@ -42,7 +42,7 @@ const AboutMain = () => {
         </Grid>
             <Grid item  md={5} >
             <Typography variant="h3"   component="h5" >
-             <motion.div animate={{color: "#fe3e57", fontSize: '60px'}}>About Me</motion.div>
+             <motion.div animate={{color: "#dfdf26", fontSize: '60px'}}>About Me</motion.div>
             </Typography>
 
             <Typography variant="body1"  component="p">

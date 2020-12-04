@@ -6,9 +6,10 @@ const useStyles = makeStyles(theme => ({
     root: {
         paddingTop: ' 60px',
         fontFamily: 'Poppins',
+        paddingBottom: '100px',
         // WebkitTextFillColor: 'transparent',
         // WebkitBackgroundClip: 'text',
-
+        // #fdfc47, #24fe41
         // background: -webkit-linear-gradient(#eee, #333);
         // -webkit-background-clip: text
 //   -webkit-text-fill-color: transparent
@@ -51,13 +52,13 @@ const HeaderMain = () => {
                 <Grid container alignItems="center" spacing={2} justify="center">
                     <Grid item md={1}>
                     </Grid>
-                    <Grid item md={6} >
+                    <Grid item md={5} >
                         <Typography variant="body2" component="p">
                             WELCOME TO MY WORLD
                 </Typography>
                         <Typography animate={{ scale: 2 }} variant="h2" component="h5" className={classes.myself}>
                             <motion.div animate={{ fontSize: "3rem" }}>
-                                Hello, I'm <motion.span animate={{ color: "#fe3e57" }} className="myName">Habib</motion.span>
+                                Hello, I'm <motion.span animate={{ color: "#fdfc47" }} className="myName">Habib</motion.span>
                             </motion.div>
                         </Typography>
 
@@ -75,8 +76,8 @@ const HeaderMain = () => {
                             I love to create Awesome website with more cleaner code. I'm a  specialized in frontend for complex scalable web apps. I always provide error free, flat and creative design as user requirements.  Want to know how I may help your project?
                 </Typography>
                     </Grid>
-                    <Grid item md={5}>
-                        <img className={classes.hero} src="https://iili.io/3e7x3b.md.png" alt="" />
+                    <Grid item md={6}>
+                        <img className={classes.hero} src="https://iili.io/KfNsPj.md.png" alt="" />
                     </Grid>
                 </Grid>
             </Container>

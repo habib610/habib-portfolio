@@ -1,5 +1,6 @@
  .my_class{
   background: linear-gradient(145deg,#f81f01,#ff2688);
+  background: linear-gradient(#fdfc47, #24fe41);
   color: #f9004d; 
   color: #ff0051; 
   color: #201e43;
@@ -16,12 +17,15 @@ a,a:hover{
 
 
 .common-btn{
-  background: linear-gradient(145deg,#ff3b21,#ee076e);
+  background: linear-gradient(55deg , #07c020 50%,#dfdf26);
+  /* background: linear-gradient(55deg , #07c020 50%,#dfdf26); */
+  /* background: linear-gradient(55deg , #dfdf26 , #07c020 50%); */
+  /* background: linear-gradient(55deg , #dfdf26 , #07c020 50%); */
   transition: all ease 1s;
   color: white !important;
 }
 .common-btn:hover{
-  background: linear-gradient(45deg,#ee076e, #ff3b21);
+  background: linear-gradient(55deg , #dfdf26 , #07c020 50%);
   color: white !important;
 }
 .footer-link{
@@ -42,7 +46,7 @@ a,a:hover{
   display: block;
   bottom: -25%;
   right: 45%;
-  background: linear-gradient(145deg,#ee076e, #f81f01);
+  background: linear-gradient(55deg , #07c020 50%,#dfdf26);
   transform: translate(-45%, -25%);
 }
 .footer-icon{

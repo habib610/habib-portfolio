@@ -17,7 +17,7 @@ const projectData=[
         id: 2,
         img: 'https://iili.io/FwKVje.jpg',
         description: 'One page E-commerce website for restaurant where you can order your favorite foods. Three catagories of food like Breakfast, Lunch, Dinner are available for you.',
-        name: 'Doctors Portal',
+        name: 'Red Onion',
         used: ["Javascript", "React.Js", "Material-UI", "Bootstrap", "Firebase", "HTML5", "CSS3"],
         github:'https://github.com/habib610/red-onion',
         live: 'https://red-onion-5071e.web.app/'
@@ -78,7 +78,7 @@ const ProjectsMain = () => {
                 <Box textAlign="center">
                 <motion.h1 
                 initial={{opacity: 0,}}
-                animate={{scale: 1.1, opacity: 1,   color: "#fe3e57"}}
+                animate={{scale: 1.1, opacity: 1,   color: "#dfdf26"}}
                 transition={{delay: .7}}
                 className="custom-title">Projects</motion.h1>
                 </Box>

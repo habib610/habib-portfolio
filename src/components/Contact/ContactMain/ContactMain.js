@@ -18,7 +18,7 @@ const ContactMain = () => {
                 <Grid item md={12} style={{textAlign: 'center'}}>
                 <Box textAlign="center">
                     
-                <motion.h1 animate={{color: "#fe3e57", scale: 1.2, marginTop: "100px"}} className="custom-title">Contact </motion.h1>
+                <motion.h1 animate={{color: "#dfdf26", scale: 1.2, marginTop: "100px"}} className="custom-title">Contact </motion.h1>
                 </Box>
                 <motion.div 
                 initial={{opacity: 0}} 
@@ -40,7 +40,7 @@ const ContactMain = () => {
                 </Grid>
                 <Grid item container justify="center" md={12} style={{background: 'black', marginTop: '60px'}}>
                 <Grid  item md={4} >
-                    <Typography style={{textAlign: 'center', marginBottom: '20px', color: '#ee076e'}} variant="h4">
+                    <Typography style={{textAlign: 'center', marginBottom: '20px', color: '#dfdf26'}} variant="h4">
                         Contact Info
                     </Typography>
             <ContactInfo/>

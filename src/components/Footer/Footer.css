@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    border: 1px solid  #ee076e ;
+    border: 1px solid  #07c020 ;
     border-radius: 100%;
     margin: 0px 10px ;
     padding: 10px;
@@ -14,5 +14,5 @@
 }
 .footer-icon:hover{
     color: #fff;
-    background: linear-gradient(145deg,#f81f01, #ee076e);
+    background: linear-gradient(55deg , #07c020 50%,#dfdf26);
 }

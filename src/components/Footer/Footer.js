@@ -11,7 +11,7 @@ const useStyles = makeStyles({
         // color: '#ee076e'
         color: '#fff',
         '& .MuiTypography-h6':{
-            color: '#ee076e',
+            color: '#dfdf26',
             marginBottom: '10px'
         }
     },

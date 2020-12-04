@@ -30,7 +30,7 @@ const BlogMain = () => {
     return (
         <Container style={{marginTop: '100px', height: '100%', paddingBottom: '100px'}}>
             <Box textAlign="center">
-                <motion.h1 animate={{color: "#fe3e57", scale: 1.2}} className="custom-title">Blogs</motion.h1>
+                <motion.h1 animate={{color: "#dfdf26", scale: 1.2}} className="custom-title">Blogs</motion.h1>
                 </Box>
             <Grid container justify="center" spacing={3}>
                 {

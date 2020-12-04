@@ -62,7 +62,7 @@ const EmailForm = () => {
 
         <Grid container justify="center">
             <div className="container">
-                <Typography style={{ textAlign: 'center', marginBottom: '20px', color: '#ee076e' }} variant="h4">
+                <Typography style={{ textAlign: 'center', marginBottom: '20px', color: '#dfdf26' }} variant="h4">
                     Get In Touch
                     </Typography>
 

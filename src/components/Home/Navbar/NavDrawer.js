@@ -62,7 +62,7 @@ const NavDrawer = () => {
         <div>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)} style={{color: "#ee076e"}}>  <MenuIcon/></Button>
+          <Button onClick={toggleDrawer(anchor, true)} style={{color: "#dfdf26"}}>  <MenuIcon/></Button>
           <Drawer  anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>
