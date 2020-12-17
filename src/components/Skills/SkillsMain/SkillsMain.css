@@ -1,0 +1,11 @@
+.skill-btn{
+    color: white;
+    background: #0a901c;
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: Poppins;
+    cursor: pointer;
+}

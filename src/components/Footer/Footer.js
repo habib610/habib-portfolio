@@ -1,6 +1,6 @@
 import { Box, Container, Grid, makeStyles, Typography,  } from '@material-ui/core';
 import { EmailOutlined, GitHub, LinkedIn, PhoneInTalk, Twitter } from '@material-ui/icons';
-import logo from '../../logo.svg'
+import logo from '../../logo1.svg'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css'

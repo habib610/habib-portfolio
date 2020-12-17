@@ -62,6 +62,7 @@ const AboutMain = () => {
             </Grid>
         </Grid>
         
+        
     </Container>
     </section>
     );

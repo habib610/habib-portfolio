@@ -3,7 +3,7 @@ import { AppBar, Button, Container, Box, makeStyles, Toolbar, Typography } from 
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import NavDrawer from './NavDrawer';
-import logo from '../../../logo.svg'
+import logo from '../../../logo1.svg'
 import './Navbar.css'
 const useStyles = makeStyles(theme=>({
 

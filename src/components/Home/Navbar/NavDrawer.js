@@ -59,7 +59,7 @@ const NavDrawer = () => {
     </div>
   );
     return (
-        <div>
+        <div style={{ background: '#080726'}}>
       {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)} style={{color: "#dfdf26"}}>  <MenuIcon/></Button>
