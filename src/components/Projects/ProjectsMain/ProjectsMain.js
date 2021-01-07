@@ -26,7 +26,7 @@ const projectData=[
         img: 'https://iili.io/KrfF8G.jpg',
         description: 'One page E-commerce website for restaurant where you can order your favorite foods. Three catagories of food like Breakfast, Lunch, Dinner are available for you.',
         name: 'Red Onion',
-        used: ["Javascript", "React.Js", "Material-UI", "Bootstrap", "Firebase", "Context API", "HTML5", "CSS3"],
+        used: ["Javascript", "React.Js","HTML5", "Material-UI", "Bootstrap", "Firebase", "Context API",  "CSS3"],
         github:'https://github.com/habib610/red-onion',
         live: 'https://red-onion-5071e.web.app/'
     },

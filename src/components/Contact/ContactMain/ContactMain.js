@@ -11,7 +11,7 @@ const ContactMain = () => {
     return (
         <div>
             <Box>
-            <Grid container  spacing={3} style={{ marginTop: '0px', padding:"100px 0px", background: ""}}>
+            <Grid container  spacing={3} style={{ marginTop: '0px', padding:"50px 0px", background: ""}}>
            <Container>
                 <Grid item md={12} style={{textAlign: 'center'}}>
                 <Box textAlign="center">

@@ -119,7 +119,7 @@ const skillSets = [
 
 const useStyles = makeStyles({
     root: {
-        padding: '100px 0px',
+        padding: '50px 0px',
         '& .MuiTypography-h3':{
             fontWeight: '700',
             padding: '30px 0px',

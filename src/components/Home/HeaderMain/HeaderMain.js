@@ -60,7 +60,7 @@ const HeaderMain = () => {
                             <Typical
                                 steps={[
                                     'MERN Stack Developer', 3000,
-                                    'Front-End Developer', 3000,
+                                    'Front End Developer', 3000,
                                         'Web Developer', 3000,
                                         500, "Graphic Designer", 3000]}
                                 loop={Infinity}

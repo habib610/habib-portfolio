@@ -50,6 +50,7 @@ a,a:hover{
   display: block;
   bottom: -30%;
   right: 45%;
+  margin-bottom: 10px;
   background: linear-gradient(55deg , #fcee21 50%,#ab1bff 40%);
   transform: translate(-45%, 30%);
 }
@@ -60,9 +61,8 @@ a,a:hover{
 .title {
   color: white;
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 700;
   font-family: 'Poppins', sans-serif;
-  /* font-family: roboto !important; */
 }
 .title > span {
   color: #fcee21;

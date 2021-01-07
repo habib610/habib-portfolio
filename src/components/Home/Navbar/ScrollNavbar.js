@@ -9,7 +9,7 @@ import Container from '@material-ui/core/Container';
 import Slide from '@material-ui/core/Slide';
 import {  Button,  makeStyles } from '@material-ui/core';
 import logo from '../../../logo_8.svg'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import NavDrawer from './NavDrawer';
 import './Navbar.css'
 const useStyles = makeStyles(theme=>({
@@ -58,6 +58,11 @@ HideOnScroll.propTypes = {
 
 export default function ScrollNavbar(props) {
     const classes = useStyles();
+  let history = useHistory()
+
+  const goToHome = () => {
+    history.push('/');
+  }
   return (
     <React.Fragment>
       <CssBaseline />
@@ -66,7 +71,7 @@ export default function ScrollNavbar(props) {
         <Container disableGutters>
                 <Toolbar >
                 <Typography style={{flexGrow: '1'}} variant="h6">
-                <img style={{height: '50px'}} src={logo} className={classes.logos} alt="logo"/>
+                <img onClick={ goToHome} style={{height: '40px', cursor: 'pointer'}} src={logo} className={classes.logos} alt="logo"/>
                 </Typography>
                 <div className={classes.sectionDesktop}>
                 <NavLink to="/" className="nav-list-normal" exact   activeClassName="nav-list-active">Home</NavLink>
