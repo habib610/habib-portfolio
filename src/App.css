@@ -1,15 +1,11 @@
- .my_class{
-  background: linear-gradient(145deg,#f81f01,#ff2688);
-  background: linear-gradient(#fdfc47, #24fe41);
-  color: #f9004d; 
-  color: #ff0051; 
-  color: #201e43;
-  color: #0a115c #201e43;
-  background: -webkit-linear-gradient(#eee, #333);
-  -webkit-text-fill-color: transparent;
- color: #dfdf26;
-} 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+html, body{
+  background-color: #060446 ;
+  background-color: #080726 !important;
+}
 /* */
 a,a:hover{
   text-decoration: none !important;
@@ -18,16 +14,16 @@ a,a:hover{
 
 
 .common-btn{
-  background: linear-gradient(55deg , #07c020 50%,#dfdf26);
-  /* background: linear-gradient(55deg , #07c020 50%,#dfdf26); */
-  /* background: linear-gradient(55deg , #dfdf26 , #07c020 50%); */
-  /* background: linear-gradient(55deg , #dfdf26 , #07c020 50%); */
+  background: #fcee21 !important;
   transition: all ease 1s;
-  color: white !important;
+  color: black !important;
+  border-radius: 0px !important;
+  border: 1px solid transparent;
 }
 .common-btn:hover{
-  background: linear-gradient(55deg , #dfdf26 , #07c020 50%);
+  background: none !important;
   color: white !important;
+  border: 1px solid #fcee21;
 }
 .MuiDrawer-paper{
   background: #201e43 url(https://images.pexels.com/photos/1668928/pexels-photo-1668928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat center  top  !important;
@@ -37,23 +33,37 @@ a,a:hover{
   color: #fff;
 }
 .custom-title{
-  font-size: 50px;
-  font-weight: 700;
   position: relative;
   margin-bottom: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
+.MuiTypography-h4 {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 700;
+}
+
 .custom-title::after{
   content: '';
-  width: 80px;
-  height: 3px;
+  width: 90px;
+  height: 5px;
   position: absolute;
   display: block;
-  bottom: -25%;
+  bottom: -30%;
   right: 45%;
-  background: linear-gradient(55deg , #07c020 50%,#dfdf26);
-  transform: translate(-45%, -25%);
+  background: linear-gradient(55deg , #fcee21 50%,#ab1bff 40%);
+  transform: translate(-45%, 30%);
 }
 .footer-icon{
   color: white !important;
+}
+
+.title {
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: roboto !important; */
+}
+.title > span {
+  color: #fcee21;
 }

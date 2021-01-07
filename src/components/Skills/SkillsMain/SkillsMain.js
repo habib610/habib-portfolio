@@ -1,5 +1,5 @@
 
-import { Button, Container, Grid, makeStyles, Typography } from '@material-ui/core';
+import { Container, Grid, makeStyles, Typography } from '@material-ui/core';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import SkillBtn from './SkillBtn';
@@ -71,15 +71,48 @@ const skillSets = [
     },
     {
         id: 17,
-        name: "Git & Github",
+        name: "Typescript",
     },
     {
         id: 18,
-        name: "Jira",
+        name: "Framer Motion",
     },
     {
         id: 19,
+        name: "Three.js",
+    },
+    
+    {
+        id: 20,
+        name: "Git & Github",
+    },
+    {
+        id: 21,
+        name: "Jira",
+    },
+    {
+        id: 22,
         name: "VS Code",
+    },
+    {
+        id: 23,
+        name: "Ubuntu",
+    },
+    {
+        id: 24,
+        name: "Illustrator",
+    },
+    {
+        id: 25,
+        name: "Photoshop",
+    },
+    {
+        id: 26,
+        name: "XD",
+    },
+    {
+        id: 27,
+        name: "Figma",
     },
    
 ]
@@ -105,7 +138,7 @@ const SkillsMain = () => {
                 <Grid container justify="center" alignItems="center" >
                     <Grid item xs={12} sm={6} md={6}>
                     <Typography variant="h3"   component="h5" >
-             <motion.div animate={{color: "#dfdf26", fontSize: '60px'}}>My Skills Set</motion.div>
+             <motion.div className=" custom-title title " animate={{fontSize: '60px'}}>My <span>Skills</span> </motion.div>
             </Typography>
                     </Grid>
                     <Grid item xs={12} sm={6} md={6}>

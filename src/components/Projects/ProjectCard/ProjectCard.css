@@ -1,11 +1,16 @@
 .custom-link-btn{
-    /* background: linear-gradient(145deg,#f81f01, #ee076e); */
     transition: all ease 1s;
-    color: #07c020 !important;
     padding: 5px 20px !important;
-    transition: all ease 2s;
+    color:rgb(34, 34, 34) !important;
+    border: 1px solid #fcee21 !important;
+    background-color: #fcee21 !important;
+    transition: all ease 0.7s;
+    border-radius: 1px!important;
   }
   .custom-link-btn:hover{
-    background: linear-gradient(55deg , #07c020 50%,#dfdf26) ;
     color: white !important;
+    background:none !important;
+  }
+  .custom-link-btn:hover .external{
+    margin-right: 15px;
   }

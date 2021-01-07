@@ -2,17 +2,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
-    border: 1px solid  #07c020 ;
+    color: #000 !important;
+    border: 1px solid  #fcee21 ;
+    background-color:#fcee21;
     border-radius: 100%;
     margin: 0px 10px ;
     padding: 10px;
     height: 40px;
     width: 40px;
-    transition: all linear 1s;
+    transition: all linear 0.41s;
 
 }
 .footer-icon:hover{
-    color: #fff;
-    background: linear-gradient(55deg , #07c020 50%,#dfdf26);
+    color: #fff !important;
+    background: none !important;
 }

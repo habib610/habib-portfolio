@@ -68,7 +68,7 @@ const EmailForm = () => {
 
                 <form onSubmit={sendEmail}  >
                     <div className=" form-group mx-auto">
-                        <input fullWidth className="form-control" required onBlur={handleBlur} type="text" placeholder="Name" name="name" />
+                        <input fullwidth="true" className="form-control" required onBlur={handleBlur} type="text" placeholder="Name" name="name" />
                     </div>
 
                     <div className=" form-group mx-auto">
@@ -80,7 +80,7 @@ const EmailForm = () => {
                     </div>
 
                     <div className=" form-group mx-auto">
-                        <textarea required className="form-control" multiline onBlur={handleBlur} id="" rows="5" placeholder="Your message" name="message"  ></textarea>
+                        <textarea required className="form-control" multiline="true" onBlur={handleBlur} id="" rows="5" placeholder="Your message" name="message"  ></textarea>
                     </div>
 
                     <button className="btn common-btn" variant="contained" type="submit">Send Message </button>

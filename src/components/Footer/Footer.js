@@ -1,13 +1,13 @@
 import { Box, Container, Grid, makeStyles, Typography,  } from '@material-ui/core';
 import { EmailOutlined, GitHub, LinkedIn, PhoneInTalk, Twitter } from '@material-ui/icons';
-import logo from '../../logo1.svg'
+import logo from '../../logo_8.svg'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css'
 const useStyles = makeStyles({
     root: {
         padding: '20px 0px 10px 0px',
-        background: 'black',
+        background: '#212529',
         // color: '#ee076e'
         color: '#fff',
         '& .MuiTypography-h6':{
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
         }
     },
     logos: {
-        height: '60px',
+        height: '50px',
         marginBottom: '30px'
     }
 })
@@ -38,17 +38,17 @@ const Footer = () => {
                         <Typography >
                             I build up awesome web front-end. Building  quality website is my specialty. I will make more interactive website for your business.
                     </Typography>
-                        <Typography variant="h6" style={{ marginTop: '30px' }}>
+                        <Typography variant="h6" style={{ marginTop: '30px', color:"#fcee21" }}>
                             Contact Me
                     </Typography>
                         <Box>
                             <Typography >
-                                <EmailOutlined style={{ marginRight: '10px' }} /> habib54562@gmail.com
+                                <EmailOutlined style={{ marginRight: '10px', color:"#fcee21" }} /> habib54562@gmail.com
                     </Typography>
                         </Box>
                         <Box>
                             <Typography>
-                                <PhoneInTalk style={{ marginRight: '10px' }} /> +8801955190797
+                                <PhoneInTalk style={{ marginRight: '10px', color:"#fcee21" }} /> +8801955190797
                     </Typography>
                         </Box>
                     </Grid>

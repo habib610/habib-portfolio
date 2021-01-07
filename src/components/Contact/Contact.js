@@ -3,7 +3,7 @@ import ContactMain from './ContactMain/ContactMain';
 
 const Contact = () => {
     return (
-        <div style={{background: "#080726", color: '#fff', overflowX: 'hidden'}}>
+        <div style={{  color: '#fff',}}>
             <ContactMain></ContactMain>
         </div>
     );

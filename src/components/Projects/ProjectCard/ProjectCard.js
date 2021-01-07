@@ -10,22 +10,14 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import './ProjectCard.css'
 import { motion } from 'framer-motion';
+import LanguageIcon from '@material-ui/icons/Language';
+import { GitHub } from '@material-ui/icons';
 const useStyles = makeStyles({
   root: {
     maxWidth: 350,
-    height: 500,
+    maxHeight: 520,
     margin: ' 30px 0px',
     transition: 'all linear .4s',
-    '&:hover': {
-      boxShadow: '0 3px 10px 5px rgba(255, 105, 135, .9)',
-      transform: 'scale(1.02)',
-    },
-    '& .MuiButton-textSizeSmall': {
-      borderWidth: "3px",
-      borderStyle: "solid",
-      borderImage: " linear-gradient(to bottom, #07c020 50%,#dfdf26) 1  100%;",
-      transition: 'all linear .7s'
-    }
   },
   media: {
     height: 280,
@@ -33,9 +25,11 @@ const useStyles = makeStyles({
 });
 const ProjectCard = ({ details }) => {
 
-  const { name,  img, description, github, live } = details;
+  const { name,  img,  github, live } = details;
 
+  const {used} = details;
   const classes = useStyles();
+  
   return (
     <Grid item md={4}>
       <motion.div 
@@ -53,17 +47,22 @@ const ProjectCard = ({ details }) => {
               <Typography gutterBottom variant="h5" component="h2">
                 {name}
               </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                {description}
-              </Typography>
+            </CardContent>
+            <CardContent> 
+              {
+                used.map((use) => {
+                  return  <p key={use} className="skill-btn2">{use}</p>
+                }
+               )
+              }
             </CardContent>
           </CardActionArea>
           <CardActions>
             <Button size="small" className="custom-link-btn" target="_blank" href={live}>
-              Live Site
+            <LanguageIcon className="external" /> Live Site
         </Button>
-            <Button size="small" className="custom-link-btn" target="_blank" href={github}>
-              Github
+            <Button size="small"   className="custom-link-btn" target="_blank" href={github}>
+             <GitHub className="external"/> Github
         </Button>
           </CardActions>
         </Card>

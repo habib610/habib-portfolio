@@ -1,11 +1,12 @@
 .header-main{
-    height: 100%;
-    /* background: rgb(19, 1, 1); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top:-40px !important;
+    padding-top: 80px ;
+    padding-bottom: 80px ;
+    position: relative;
 }
-/* background: linear-gradient(145deg,#f81f01,#ee076e);   color: #f9004d; */
 .myName{
     font-weight: 800;
 }

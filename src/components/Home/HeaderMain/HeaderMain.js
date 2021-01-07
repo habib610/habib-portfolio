@@ -7,12 +7,6 @@ const useStyles = makeStyles(theme => ({
         paddingTop: ' 60px',
         fontFamily: 'Poppins',
         paddingBottom: '100px',
-        // WebkitTextFillColor: 'transparent',
-        // WebkitBackgroundClip: 'text',
-        // #fdfc47, #24fe41
-        // background: -webkit-linear-gradient(#eee, #333);
-        // -webkit-background-clip: text
-//   -webkit-text-fill-color: transparent
         '& .MuiTypography-h2': {
             fontWeight: '700',
             fontSize: '60px',
@@ -58,16 +52,17 @@ const HeaderMain = () => {
                 </Typography>
                         <Typography animate={{ scale: 2 }} variant="h2" component="h5" className={classes.myself}>
                             <motion.div animate={{ fontSize: "3rem" }}>
-                                Hello, I'm <motion.span animate={{ color: "#fdfc47" }} className="myName">Habib</motion.span>
+                                Hello, I'm <motion.span animate={{ color: "#fcee21" }} className="myName">Habib</motion.span>
                             </motion.div>
                         </Typography>
 
                         <Typography variant="h4" color="secondary" component="h6">
                             <Typical
                                 steps={[
-                                    'Front-End Developer', 2000,
-                                        'Web Developer', 2000,
-                                        500, "Graphic Designer", 1000]}
+                                    'MERN Stack Developer', 3000,
+                                    'Front-End Developer', 3000,
+                                        'Web Developer', 3000,
+                                        500, "Graphic Designer", 3000]}
                                 loop={Infinity}
                                 wrapper="p"
                             />

@@ -14,12 +14,9 @@ const useStyles = makeStyles({
   root: {
     width: 300,
     marginTop: "40px",
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .9)',
     transition: 'all linear 1s',
     '&:hover': {
-       media:{
-        transform: 'scale(1.1)'
-      }
+      boxShadow: '0 3px 3px 3px rgba(251, 232, 62, 0.5) !important',
     },
 
     '& .MuiButton-textSizeSmall': {
@@ -54,7 +51,6 @@ const BlogCard = ({ article }) => {
       >
         <Card className={classes.root}>
           <CardActionArea>
-
             <CardMedia
               className={classes.media}
               image={img}
@@ -68,7 +64,6 @@ const BlogCard = ({ article }) => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-
             <Button size="small"  className="custom-link-btn" target="_blank" href={link}>
               Read Article
 </Button>
