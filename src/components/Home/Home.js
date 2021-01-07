@@ -15,9 +15,7 @@ const Home = () => {
       <Slide left>
       <Skills/>
         </Slide>
-        <Slide bottom>
       <Projects/>
-        </Slide>
         <Slide right>
          < Blogs/>
         </Slide>
