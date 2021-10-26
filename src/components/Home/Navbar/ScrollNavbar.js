@@ -1,17 +1,18 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import { Button, CircularProgress, makeStyles } from '@material-ui/core';
 import AppBar from '@material-ui/core/AppBar';
+import Container from '@material-ui/core/Container';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Slide from '@material-ui/core/Slide';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Container from '@material-ui/core/Container';
-import Slide from '@material-ui/core/Slide';
-import {  Button,  makeStyles } from '@material-ui/core';
-import logo from '../../../logo_8.svg'
+import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
 import { NavLink, useHistory } from 'react-router-dom';
+import { fireStore } from '../../../lib/firebase';
+import logo from '../../../logo_8.svg';
+import './Navbar.css';
 import NavDrawer from './NavDrawer';
-import './Navbar.css'
 const useStyles = makeStyles(theme=>({
 
     sectionDesktop:{
@@ -59,6 +60,19 @@ HideOnScroll.propTypes = {
 export default function ScrollNavbar(props) {
     const classes = useStyles();
   let history = useHistory()
+      const [resume, setResume] = useState(null);
+        useEffect(() => {
+        fireStore
+            .collection('resume')
+            .get()
+            .then((snap) => {
+                const document = [];
+                snap.docs.forEach((item) => {
+                    document.push({ ...item.data(), id: item.id });
+                });
+                setResume(document[0]);
+            });
+    }, []);
 
   const goToHome = () => {
     history.push('/');
@@ -82,7 +96,7 @@ export default function ScrollNavbar(props) {
           <NavLink to="/contact" className="nav-list-normal"  activeClassName="nav-list-active">Contact</NavLink>
                 </div>
                 <div className={classes.sectionDesktop}>
-                <Button  variant="contained" download color="secondary" className="common-btn"  href="https://drive.google.com/file/d/1IYLnzzYiePNWqzJLvw3REnp0mCGPvR7c/view?usp=sharing">Download Resume</Button>
+                { !resume ? <CircularProgress size={30} color="secondary" /> : <Button  variant="contained" download color="secondary" className="common-btn"  href={resume?.resume}>Download Resume</Button>}
           <Button size="small" ></Button>
                 </div>
 

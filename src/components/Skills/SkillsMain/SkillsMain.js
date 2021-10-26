@@ -31,87 +31,95 @@ const skillSets = [
     },
     {
         id: 7,
-        name: "Material-UI",
+        name: "React-Native",
     },
     {
         id: 8,
-        name: "Heroku",
+        name: "Python",
     },
     {
         id: 9,
-        name: "SASS",
+        name: "Material-UI",
     },
     {
         id: 10,
-        name: "REST API",
+        name: "Heroku",
     },
     {
         id: 11,
-        name: "Bootstrap",
+        name: "SASS",
     },
     {
         id: 12,
-        name: "C",
+        name: "REST API",
     },
     {
         id: 13,
-        name: "React-Bootstrap",
+        name: "Bootstrap",
     },
     {
         id: 14,
-        name: "Firebase",
+        name: "C",
     },
     {
         id: 15,
-        name: "HTML5",
+        name: "React-Bootstrap",
     },
     {
         id: 16,
-        name: "CSS3",
+        name: "Firebase",
     },
     {
         id: 17,
-        name: "Typescript",
+        name: "HTML5",
     },
     {
         id: 18,
-        name: "Framer Motion",
+        name: "CSS3",
     },
     {
         id: 19,
+        name: "Typescript",
+    },
+    {
+        id: 20,
+        name: "Framer Motion",
+    },
+    {
+        id: 21,
         name: "Three.js",
     },
     
     {
-        id: 20,
+        id: 22,
         name: "Git & Github",
     },
     {
-        id: 21,
+        id: 23,
         name: "Jira",
     },
     {
-        id: 22,
+        id: 24,
         name: "VS Code",
     },
     {
-        id: 23,
+        id: 25,
         name: "Ubuntu",
     },
     {
-        id: 24,
+        id: 26,
         name: "Illustrator",
     },
     {
-        id: 25,
+        id: 27,
         name: "Photoshop",
     },
     {
-        id: 26,
+        id: 28,
         name: "XD",
     },
     {
-        id: 27,
+        id: 29,
         name: "Figma",
     },
    

@@ -19,7 +19,6 @@ const Home = () => {
         <Slide right>
          < Blogs/>
         </Slide>
-      
     </div>
   );
 };

@@ -1,14 +1,14 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import { Grid } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import { Grid } from '@material-ui/core';
 import { motion } from 'framer-motion';
+import React from 'react';
 
 const useStyles = makeStyles({
   root: {
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
 });
 const BlogCard = ({ article }) => {
   const classes = useStyles();
-  const { img, name, link } = article;
+  const { image, title, liveLink } = article;
   return (
     <Grid item md={4}>
       <motion.div
@@ -53,18 +53,18 @@ const BlogCard = ({ article }) => {
           <CardActionArea>
             <CardMedia
               className={classes.media}
-              image={img}
-              title={name}
+              image={image}
+              title={title}
               
             />
             <CardContent className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">
-                {name}
+                {title}
               </Typography>
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <Button size="small"  className="custom-link-btn" target="_blank" href={link}>
+            <Button size="small"  className="custom-link-btn" target="_blank" href={liveLink}>
               Read Article
 </Button>
           </CardActions>

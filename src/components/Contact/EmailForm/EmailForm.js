@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { Grid, Typography } from '@material-ui/core';
 import emailjs from 'emailjs-com';
-import {  Grid, input,  Typography } from '@material-ui/core';
+import React, { useState } from 'react';
 
 
 const EmailForm = () => {
@@ -46,7 +46,6 @@ const EmailForm = () => {
                 }, (error) => {
                     console.log(error.text);
                 });
-            console.log("Working")
             e.target.reset()
         }
         else {

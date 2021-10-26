@@ -1,13 +1,12 @@
 import {
-  Button,
-  Container,
+  Button, CircularProgress, Container,
   Grid,
-  makeStyles,
-  Typography,
+  makeStyles, Typography
 } from "@material-ui/core";
-import React from "react";
-import "./AboutMain.css";
 import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { fireStore } from "../../../lib/firebase";
+import "./AboutMain.css";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +29,19 @@ const useStyles = makeStyles((theme) => ({
 
 const AboutMain = () => {
   const classes = useStyles();
+        const [resume, setResume] = useState(null);
+        useEffect(() => {
+        fireStore
+            .collection('resume')
+            .get()
+            .then((snap) => {
+                const document = [];
+                snap.docs.forEach((item) => {
+                    document.push({ ...item.data(), id: item.id });
+                });
+                setResume(document[0]);
+            });
+    }, []);
   return (
     <section className="about">
       <Container className={classes.root}>
@@ -82,15 +94,15 @@ const AboutMain = () => {
                 <strong>Phone</strong>+8801955190797
               </li>
             </ul>
-            <Button
+            { !resume ? <CircularProgress color="secondary" size={40} /> : <Button
               variant="contained"
-              download
+              
               color="secondary"
               className="common-btn"
-              href="https://drive.google.com/file/d/1IYLnzzYiePNWqzJLvw3REnp0mCGPvR7c/view?usp=sharing"
+              href={resume?.resume}
             >
               Download Resume
-            </Button>
+            </Button>}
           </Grid>
         </Grid>
       </Container>

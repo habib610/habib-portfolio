@@ -1,7 +1,7 @@
 import { Container, Grid, makeStyles, Typography } from '@material-ui/core';
-import Typical from 'react-typical'
+import { motion } from "framer-motion";
 import React from 'react';
-import { motion } from "framer-motion"
+import Typical from 'react-typical';
 const useStyles = makeStyles(theme => ({
     root: {
         paddingTop: ' 60px',
@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
 
 const HeaderMain = () => {
     const classes = useStyles();
+
     return (
 
         <div className={classes.root} >

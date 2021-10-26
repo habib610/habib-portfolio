@@ -1,17 +1,17 @@
 import { Grid } from '@material-ui/core';
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import './ProjectCard.css'
-import { motion } from 'framer-motion';
-import LanguageIcon from '@material-ui/icons/Language';
 import { GitHub } from '@material-ui/icons';
+import LanguageIcon from '@material-ui/icons/Language';
+import { motion } from 'framer-motion';
+import React from 'react';
+import './ProjectCard.css';
 const useStyles = makeStyles({
   root: {
     maxWidth: 350,
@@ -25,9 +25,9 @@ const useStyles = makeStyles({
 });
 const ProjectCard = ({ details }) => {
 
-  const { name,  img,  github, live } = details;
+  const { title,  image,  github, liveSite } = details;
 
-  const {used} = details;
+  const {technologies} = details;
   const classes = useStyles();
   
   return (
@@ -40,25 +40,25 @@ const ProjectCard = ({ details }) => {
           <CardActionArea>
             <CardMedia
               className={classes.media}
-              image={img}
+              image={image}
               title="Contemplative Reptile"
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
-                {name}
+                {title}
               </Typography>
             </CardContent>
             <CardContent> 
               {
-                used.map((use) => {
-                  return  <p key={use} className="skill-btn2">{use}</p>
+                technologies.map((use) => {
+                  return  <p key={use.id} className="skill-btn2">{use.name}</p>
                 }
                )
               }
             </CardContent>
           </CardActionArea>
-          <CardActions>
-            <Button size="small" className="custom-link-btn" target="_blank" href={live}>
+          <CardActions style={{alignSelf: "flex-end"}}>
+            <Button size="small" className="custom-link-btn" target="_blank" href={liveSite}>
             <LanguageIcon className="external" /> Live Site
         </Button>
             <Button size="small"   className="custom-link-btn" target="_blank" href={github}>
