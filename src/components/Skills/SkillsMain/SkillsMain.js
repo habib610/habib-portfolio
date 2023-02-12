@@ -1,8 +1,7 @@
-
-import { Container, Grid, makeStyles, Typography } from '@material-ui/core';
-import { motion } from 'framer-motion';
-import React, { useState } from 'react';
-import SkillBtn from './SkillBtn';
+import { Container, Grid, makeStyles, Typography } from "@material-ui/core";
+import { motion } from "framer-motion";
+import React, { useState } from "react";
+import SkillBtn from "./SkillBtn";
 
 const skillSets = [
     {
@@ -11,7 +10,7 @@ const skillSets = [
     },
     {
         id: 2,
-        name: "ES6",
+        name: "Typescript",
     },
     {
         id: 3,
@@ -19,15 +18,7 @@ const skillSets = [
     },
     {
         id: 4,
-        name: "Redux.js",
-    },
-    {
-        id: 5,
-        name: "Node.js",
-    },
-    {
-        id: 6,
-        name: "MongoDB",
+        name: "Redux Toolkit",
     },
     {
         id: 7,
@@ -35,36 +26,36 @@ const skillSets = [
     },
     {
         id: 8,
-        name: "Python",
+        name: "Java",
     },
+    {
+        id: 10,
+        name: "Spring-Boot",
+    },
+    {
+        id: 5,
+        name: "Node.js",
+    },
+
     {
         id: 9,
         name: "Material-UI",
     },
-    {
-        id: 10,
-        name: "Heroku",
-    },
+
     {
         id: 11,
-        name: "SASS",
+        name: "SQL",
     },
     {
-        id: 12,
-        name: "REST API",
+        id: 6,
+        name: "MongoDB",
     },
+
     {
         id: 13,
         name: "Bootstrap",
     },
-    {
-        id: 14,
-        name: "C",
-    },
-    {
-        id: 15,
-        name: "React-Bootstrap",
-    },
+
     {
         id: 16,
         name: "Firebase",
@@ -77,26 +68,14 @@ const skillSets = [
         id: 18,
         name: "CSS3",
     },
-    {
-        id: 19,
-        name: "Typescript",
-    },
-    {
-        id: 20,
-        name: "Framer Motion",
-    },
-    {
-        id: 21,
-        name: "Three.js",
-    },
-    
+
     {
         id: 22,
         name: "Git & Github",
     },
     {
         id: 23,
-        name: "Jira",
+        name: "Intellij Idea",
     },
     {
         id: 24,
@@ -107,57 +86,47 @@ const skillSets = [
         name: "Ubuntu",
     },
     {
-        id: 26,
-        name: "Illustrator",
-    },
-    {
-        id: 27,
-        name: "Photoshop",
-    },
-    {
-        id: 28,
-        name: "XD",
-    },
-    {
         id: 29,
         name: "Figma",
     },
-   
-]
+];
 
 const useStyles = makeStyles({
     root: {
-        padding: '50px 0px',
-        '& .MuiTypography-h3':{
-            fontWeight: '700',
-            padding: '30px 0px',
-            textAlign: 'center',
-            fontFamily: 'Poppins',
-            },
-    }
-})
+        padding: "50px 0px",
+        "& .MuiTypography-h3": {
+            fontWeight: "700",
+            padding: "30px 0px",
+            textAlign: "center",
+            fontFamily: "Poppins",
+        },
+    },
+});
 const SkillsMain = () => {
     const classes = useStyles();
-    const [skills] = useState(skillSets)
+    const [skills] = useState(skillSets);
     return (
         <section>
-            
-            <Container className={classes.root}  >
-                <Grid container justify="center" alignItems="center" >
+            <Container className={classes.root}>
+                <Grid container justifyContent="center" alignItems="center">
                     <Grid item xs={12} sm={6} md={6}>
-                    <Typography variant="h3"   component="h5" >
-             <motion.div className=" custom-title title " animate={{fontSize: '60px'}}>My <span>Skills</span> </motion.div>
-            </Typography>
+                        <Typography variant="h3" component="h5">
+                            <motion.div
+                                className=" custom-title title "
+                                animate={{ fontSize: "60px" }}
+                            >
+                                My <span>Skills</span>{" "}
+                            </motion.div>
+                        </Typography>
                     </Grid>
                     <Grid item xs={12} sm={6} md={6}>
-               {
-                   skills.map(skill =>  <SkillBtn key={skill.id} skill={skill}></SkillBtn> )
-               }
+                        {skills.map((skill) => (
+                            <SkillBtn key={skill.id} skill={skill}></SkillBtn>
+                        ))}
                     </Grid>
                 </Grid>
             </Container>
         </section>
-
     );
 };
 

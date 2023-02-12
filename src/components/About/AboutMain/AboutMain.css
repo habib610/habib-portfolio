@@ -1,31 +1,30 @@
- .about{
- background-color: #100e3a;
- color: white;
- position: relative;
- padding-top: 80px;
- padding-bottom: 80px;
- margin-top:-50px;
- overflow-x: hidden !important;
- }
- img.hero{
-     max-width: 400px;
-     overflow: hidden;
-     position: relative;
-     border-radius: 5px;
-     border: 6px solid #fcee21;
- }
+.about {
+    background-color: #100e3a;
+    color: white;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: -50px;
+    overflow-x: hidden !important;
+}
+img.hero {
+    max-width: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    border: 6px solid #fcee21;
+}
 
- ul > li {
+ul > li {
     list-style-type: none;
     margin: 0;
     text-align: left;
 }
-ul{
+ul {
     padding-inline-start: 20px;
-    
 }
 
-.about ul li strong{
+.about ul li strong {
     min-width: 120px;
     display: inline-block;
     position: relative;
@@ -33,7 +32,7 @@ ul{
     color: #fcee21;
     font-weight: 700;
 }
-.about ul li strong::before{
+.about ul li strong::before {
     position: relative;
     left: 100px;
     color: #fcee21;
